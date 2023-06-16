@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #000;
+	color: cadetblue;
+	font-size: 1rem;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+.App {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.form_container {
+	position: absolute;
+	top: 10px;
+}
+
+.notes_container {
+	position: absolute;
+	display: flex;
+	top: 50px;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+.ul_container {
+	position: absolute;
+	top: 90px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	gap: 15px;
+}
+
+.note_card {
+	display: flex;
+	width: 60%;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.note_content {
+	border: 3px solid blueviolet;
+	width: 50%;
+	height: auto;
+	padding: 4px;
+	background-color: #222;
+	color: whitesmoke;
+	position: relative;
+}
+
+.note_button {
+	background-color: transparent;
+	border: none;
+	transition: all 0.4s ease;
+	cursor: pointer;
+}
+
+.note_button:hover {
+	transition: all 0.2s ease;
+	transform: scale(1.3);
+}
+
+.note_important {
+	cursor: pointer;
+	padding: 2px;
+	border-radius: 5px;
+	width: 28%;
+	text-align: center;
+	background-color: #444;
+}
